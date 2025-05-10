@@ -1,3 +1,5 @@
+/* #region UTILITIES */
+
 * {
     margin: 0;
     padding: 0;
@@ -39,6 +41,9 @@ img {
     width: 100%;
 }
 
+:root {
+    --dis-bg-primary: rgb(38, 112, 250)
+}
 
 
 .debug {
@@ -53,6 +58,10 @@ img {
     }
 }
 
+/* #endregion UTILITIES */
+
+
+/* #region CONTAINERS STRUCTURE */
 
 .container {
     max-width: 1200px;
@@ -93,4 +102,28 @@ img {
 
 .col-8 {
     width: calc(100% / 12 * 8);
+}
+
+/* #endregion CONTAINERS STRUCTURE */
+
+/* #region DETAILS */
+
+.button {
+    background-color: var(--dis-bg-primary);
+    color: white;
+    text-align: center;
+    border-radius: 0.1rem;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--dis-bg-primary);
+    border: 0.1rem solid var(--dis-bg-primary);
+    cursor: pointer;
+}
+
+.operazioni img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
