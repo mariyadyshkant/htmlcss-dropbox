@@ -1,4 +1,4 @@
-/* #region UTILITIES */
+/* #region GENERAL */
 
 * {
     margin: 0;
@@ -54,16 +54,18 @@
         font-style: normal;
         color: rgb(146, 146, 146)
     }
+
+    img {
+        max-width: 100%;
+    }
 }
 
-img {
-    max-width: 100%;
-}
+/* #endregion GENERAL */
 
+/* #region UTILITIES */
 :root {
     --dis-bg-primary: rgb(38, 112, 250)
 }
-
 
 .debug {
     * {
@@ -75,139 +77,6 @@ img {
         } */
 
     }
-}
-
-/* #endregion UTILITIES */
-
-
-/* #region NAVBAR */
-
-/* #region HERO */
-
-#hero {
-    background-color: #B4D0E6;
-    max-height: 560px;
-
-    h1 {
-        font-size: 4rem;
-
-    }
-
-    .button {
-        width: 62%;
-        height: 9%;
-        padding: 6px;
-    }
-
-    .fa-angles-down {
-        font-size: 2rem;
-        padding-top: 0.5rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-}
-
-
-.container.hero {
-    margin-top: -1rem;
-    max-width: 90%;
-
-    img {
-        max-width: 80%;
-    }
-
-    .col-9,
-    .col-4,
-    .col-8,
-    .col-10 {
-        padding: 0;
-    }
-}
-
-/* #endregion HERO */
-
-nav {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; */
-
-
-    img {
-        /* width: 20%; */
-    }
-
-    .button {
-        width: 120px;
-        height: 50px;
-        padding-top: 10px;
-        font-size: 1.5rem;
-    }
-}
-
-ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-li {
-    padding: 1rem;
-    margin: 0px 10px;
-    font-size: 1.5rem;
-}
-
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* #endregion NAVBAR */
-
-/* #region CONTAINERS STRUCTURE */
-
-.container {
-    max-width: 1200px;
-    width: 80%;
-    margin: 20px auto;
-
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-[class*="col"] {
-    padding: 1rem;
-}
-
-.small_container {
-    width: 95%;
-    border: 0.05rem solid rgb(190, 186, 186);
-    justify-self: center;
-    min-height: 1010px;
-}
-
-.bottom {
-    border: 0.05rem solid rgb(190, 186, 186);
-}
-
-.middle {
-    width: 80%;
-    padding: 1rem;
-    justify-self: center;
-    min-height: 508px;
-    border-bottom: 0.05rem solid rgb(190, 186, 186);
-}
-
-.salienti {
-    width: 80%;
-    padding: 1rem;
-    justify-self: center;
 }
 
 /* #region Dimensioni colonne */
@@ -260,38 +129,144 @@ li {
     width: calc(100% / 12 * 12);
 }
 
-/* #endregion CONTAINERS STRUCTURE */
+/* #endregion Dimensioni colonne */
 
-/* #region DETAILS */
+/* #endregion UTILITIES */
 
-.button {
-    background-color: var(--dis-bg-primary);
-    color: white;
-    text-align: center;
-    border-radius: 0.1rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+/* #region STRUTTURA GENERALE DEL CONTAINER */
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 20px auto;
+
 }
 
-.button:hover {
-    background-color: white;
-    color: var(--dis-bg-primary);
-    border: 0.1rem solid var(--dis-bg-primary);
-    cursor: pointer;
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.operazioni img:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out;
+[class*="col"] {
+    padding: 1rem;
 }
 
+/* #endregion STRUTTURA GENERALE DEL CONTAINER */
+
+/* #region NAVBAR */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    li {
+        padding: 1rem;
+        margin: 0px 10px;
+        font-size: 1.5rem;
+    }
+
+    .button {
+        width: 120px;
+        height: 50px;
+        padding-top: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+/* #endregion NAVBAR */
+
+/* #region HERO */
+
+#hero {
+    background-color: #B4D0E6;
+    max-height: 620px;
+
+    /* Titolo Hero */
+    h1 {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    /* Bottone Inizia la tua prova gratuita */
+    .button {
+        width: 62%;
+        height: 9%;
+        padding: 6px;
+    }
+
+    .fa-angles-down {
+        font-size: 2rem;
+        padding-top: 0.5rem;
+    }
+}
+
+.container.hero {
+    margin-top: -1rem;
+    max-width: 90%;
+
+    img {
+        max-width: 80%;
+    }
+
+    .col-9,
+    .col-4,
+    .col-8 {
+        padding: 0;
+    }
+}
+
+/* #endregion HERO */
+
+/* #region PIANI */
+
+.small_container {
+    width: 95%;
+    border: 0.05rem solid rgb(190, 186, 186);
+    justify-self: center;
+    min-height: 1010px;
+}
+
+/* Barra in alto nelle colonne */
 .bar_piani {
     text-align: center;
     border-bottom: 0.05rem solid rgb(190, 186, 186);
     padding-bottom: 1rem;
 }
+
+/* Box in mezzo nelle colonne */
+.middle {
+    width: 80%;
+    padding: 1rem;
+    justify-self: center;
+    min-height: 508px;
+    border-bottom: 0.05rem solid rgb(190, 186, 186);
+}
+
+/* Box in basso nelle colonne */
+.salienti {
+    width: 80%;
+    padding: 1rem;
+    justify-self: center;
+}
+
+/* Riga in basso */
+.bottom {
+    border: 0.05rem solid rgb(190, 186, 186);
+}
+
+/* #endregion PIANI */
+
+/* #region PARTNER */
+
 
 .testo_partner {
     width: 80%;
@@ -309,6 +284,9 @@ li {
     }
 }
 
+/* #endregion PARTNER */
+
+/* #region OPERAZIONI */
 .container.operazioni {
     p {
         padding-right: 0.4rem;
@@ -317,6 +295,9 @@ li {
     }
 }
 
+/* #endregion OPERAZIONI */
+
+/* #region TEAM */
 .container.team {
     a {
         font-size: 1.2rem;
@@ -324,7 +305,7 @@ li {
     }
 }
 
-/* #endregion DETAILS */
+/* #endregion TEAM */
 
 /* #region FOOTER */
 #app_footer {
@@ -337,7 +318,6 @@ li {
     flex-direction: row;
     justify-content: space-between;
     max-width: 90%;
-
 }
 
 .footer_list {
@@ -365,3 +345,32 @@ li {
         margin-bottom: 1.5rem;
     }
 }
+
+/* #endregion FOOTER */
+
+/* #region DETAILS */
+
+.button {
+    background-color: var(--dis-bg-primary);
+    color: white;
+    text-align: center;
+    border-radius: 0.1rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.button:hover {
+    background-color: white;
+    color: var(--dis-bg-primary);
+    border: 0.1rem solid var(--dis-bg-primary);
+    cursor: pointer;
+}
+
+.operazioni img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* #endregion DETAILS */
