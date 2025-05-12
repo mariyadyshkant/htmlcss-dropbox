@@ -13,7 +13,8 @@
         font-family: "Lato", sans-serif;
         font-weight: 400;
         font-style: normal;
-        color: black
+        color: black;
+        white-space: nowrap;
     }
 
     p,
@@ -111,6 +112,7 @@ img {
 
 .container.hero {
     margin-top: -1rem;
+    max-width: 90%;
 
     img {
         max-width: 80%;
@@ -137,10 +139,11 @@ nav {
         /* width: 20%; */
     }
 
-    button {
-        width: 80px;
-        height: 60%;
-        padding: 5px;
+    .button {
+        width: 120px;
+        height: 50px;
+        padding-top: 10px;
+        font-size: 1.5rem;
     }
 }
 
@@ -151,7 +154,9 @@ ul {
 }
 
 li {
-    padding: 1rem
+    padding: 1rem;
+    margin: 0px 10px;
+    font-size: 1.5rem;
 }
 
 .navbar {
@@ -298,9 +303,9 @@ li {
     }
 
     .button {
-        width: 45%;
-        height: 30px;
-        padding: 5px;
+        width: 50%;
+        height: 35px;
+        padding: 7px;
     }
 }
 
@@ -312,4 +317,51 @@ li {
     }
 }
 
+.container.team {
+    a {
+        font-size: 1.2rem;
+        text-decoration: underline;
+    }
+}
+
 /* #endregion DETAILS */
+
+/* #region FOOTER */
+#app_footer {
+    background-color: black;
+    color: white;
+}
+
+.container.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 90%;
+
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+    li {
+        padding: 1rem 0rem;
+        font-size: 1.2rem;
+        margin: 0rem 0rem;
+
+    }
+}
+
+.container.lingua {
+    max-width: 90%;
+
+    hr {
+        width: 120px;
+        margin-bottom: 1.5rem;
+    }
+}
